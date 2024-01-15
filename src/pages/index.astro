@@ -1,8 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import SectionContainer from "../components/SectionContainer.astro"
-import Experience from "../components/Experience.astro"
-import Footer from "../components/Footer.astro"
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Experience from "../components/Experience.astro";
+import Footer from "../components/Footer.astro";
+import TypescriptLogo from "../components/icons/Typescript.astro";
+import JavascriptLogo from "../components/icons/Javascript.astro";
+import ReduxLogo from "../components/icons/Redux.astro";
+import ReactLogo from "../components/icons/React.astro";
+import AngularLogo from "../components/icons/Angular.astro";
+import HtmlLogo from "../components/icons/Html.astro";
+import CssLogo from "../components/icons/Css.astro";
+import GitLogo from "../components/icons/Github.astro";
 ---
 
 <Layout
@@ -17,7 +25,7 @@ import Footer from "../components/Footer.astro"
         alt="portfolio photo"
       />
       <h1
-        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        class="dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
         Hey, I'm Santiago Vega <a
           href="https://www.linkedin.com/in/david-santiago-vega-cort%C3%A9s-9b083697/"
@@ -27,32 +35,13 @@ import Footer from "../components/Footer.astro"
         >
         </a>
       </h1>
-      <h2
-        class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
-      >
-        <span>+5 years of experience.</span><span
-          class="text-blue-800 dark:text-yellow-200"
-        >
-		Web developer and Frontend Developer</span
-        >
-         .<span class="text-yellow-800 dark:text-red-200">
-          From Bogotá, Colombia</span
-        >.
-        <span class="text-red-800 dark:text-sky-200"
-          >Specialized in creating amazing websites.</span
-        >
-      </h2>
-
-      <nav class="flex gap-4 mt-8 flex-wrap">
-
-      </nav>
     </SectionContainer>
 
     <SectionContainer id="experience">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
-         Experience
+        Experience
       </h2>
       <Experience />
     </SectionContainer>
@@ -61,7 +50,7 @@ import Footer from "../components/Footer.astro"
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
-         Projects
+        Projects
       </h2>
     </SectionContainer>
 
@@ -69,17 +58,67 @@ import Footer from "../components/Footer.astro"
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
-         About me
+        About me
+
+        <h2
+          class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
+        >
+          <span>+5 years of experience.</span><span
+            class="text-blue-800 dark:text-yellow-200"
+          >
+            Web developer and Frontend Developer</span
+          >
+          .<span class="text-yellow-800 dark:text-red-200">
+            From Bogotá, Colombia</span
+          >.
+          <span class="text-red-800 dark:text-sky-200"
+            >Specialized in creating amazing websites.</span
+          >
+        </h2>
       </h2>
+    </SectionContainer>
+
+    <SectionContainer id="technologies">
+      <h2
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+      >
+        Technologies
+      </h2>
+      <div class="flex grid grid-cols-4 gap-6">
+        <p class="flex flex-col items-center">
+          <HtmlLogo class="size-6 md:size-6 mr-2 mb-2" /> HTML
+        </p>
+        <p class="flex flex-col items-center">
+          <CssLogo class="size-6 md:size-6 mr-2 mb-2" /> Css
+        </p>
+        <p class="flex flex-col items-center">
+          <JavascriptLogo class="size-6 md:size-6 mr-2 mb-2" /> Javascript
+        </p>
+        <p class="flex flex-col items-center">
+          <ReactLogo class="size-6 md:size-6 mr-2 mb-2" /> React
+        </p>
+        <p class="flex flex-col items-center">
+          <TypescriptLogo class="size-6 md:size-6 mr-2 mb-2" /> Typescript
+        </p>
+        <p class="flex flex-col items-center">
+          <ReduxLogo class="size-6 md:size-6 mr-2 mb-2" /> Redux
+        </p>
+        <p class="flex flex-col items-center">
+          <AngularLogo class="size-6 md:size-6 mr-2 mb-2" /> Angular
+        </p>
+        <p class="flex flex-col items-center">
+          <GitLogo class="size-6 md:size-6 mr-2 mb-2" /> Gihub
+        </p>
+      </div>
     </SectionContainer>
 
     <SectionContainer id="contact">
       <h2
         class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
       >
-         Contact
+        Contact
       </h2>
-      <Footer/>
+      <Footer />
     </SectionContainer>
   </main>
 </Layout>
