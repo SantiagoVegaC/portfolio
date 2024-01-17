@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Experience from "../components/Experience.astro";
-import Footer from "../components/Footer.astro";
+import Contact from "../components/Contact.astro";
 import TypescriptLogo from "../components/icons/Typescript.astro";
 import JavascriptLogo from "../components/icons/Javascript.astro";
 import ReduxLogo from "../components/icons/Redux.astro";
@@ -11,6 +11,7 @@ import AngularLogo from "../components/icons/Angular.astro";
 import HtmlLogo from "../components/icons/Html.astro";
 import CssLogo from "../components/icons/Css.astro";
 import GitLogo from "../components/icons/Github.astro";
+import AboutMe from "../components/AboutMe.astro";
 ---
 
 <Layout
@@ -18,14 +19,14 @@ import GitLogo from "../components/icons/Github.astro";
   description="Specialized in creating amazing websites"
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-32 flex flex-row items-center justify-center">
+    <SectionContainer class="py-32 pb-32 flex flex-row items-center justify-center">
       <img
-        class="rounded-full mb-4 mr-8"
-        src="https://media.licdn.com/dms/image/D4E35AQE57ziq_drdOQ/profile-framedphoto-shrink_200_200/0/1685980914861?e=1705892400&v=beta&t=56LRoDi4nY50gVRXpOcpBtVGjlOeB-9mz3I6j3CtC2E"
+        class="rounded-lg mb-4 mr-8"
+        src="src/assets/1692561668828.jpg"
         alt="portfolio photo"
       />
       <h1
-        class="dark:text-white text-wrap text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        class="text-cyan-500 text-wrap text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
         Hey, I'm Santiago Vega <a
           href="https://www.linkedin.com/in/david-santiago-vega-cort%C3%A9s-9b083697/"
@@ -39,7 +40,7 @@ import GitLogo from "../components/icons/Github.astro";
 
     <SectionContainer id="experience">
       <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-black/80"
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
       >
         Experience
       </h2>
@@ -48,7 +49,7 @@ import GitLogo from "../components/icons/Github.astro";
 
     <SectionContainer id="projects">
       <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
       >
         Projects
       </h2>
@@ -56,69 +57,59 @@ import GitLogo from "../components/icons/Github.astro";
 
     <SectionContainer id="about">
       <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
       >
         About me
 
         <h2
           class="text-xl lg:text-2xl text-balance max-w-[700px] text-black dark:text-white"
         >
-          <span>+5 years of experience.</span><span
-            class="text-blue-800 dark:text-yellow-200"
-          >
-            Web developer and Frontend Developer</span
-          >
-          .<span class="text-yellow-800 dark:text-red-200">
-            From Bogotá, Colombia</span
-          >.
-          <span class="text-red-800 dark:text-sky-200"
-            >Specialized in creating amazing websites.</span
-          >
+        <AboutMe/>
         </h2>
       </h2>
     </SectionContainer>
 
     <SectionContainer id="technologies">
       <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
       >
         Technologies
       </h2>
       <div class="flex grid grid-cols-4 gap-6">
         <p class="flex flex-col items-center">
-          <HtmlLogo class="size-6 md:size-6 mr-2 mb-2" /> HTML
+          <HtmlLogo class="size-6 md:size-6 mr-2 mb-2" /> <span class="text-white">HTML</span>
         </p>
         <p class="flex flex-col items-center">
-          <CssLogo class="size-6 md:size-6 mr-2 mb-2" /> Css
+          <CssLogo class="size-6 md:size-6 mr-2 mb-2" /> <span class="text-white">Css</span>
         </p>
         <p class="flex flex-col items-center">
-          <JavascriptLogo class="size-6 md:size-6 mr-2 mb-2" /> Javascript
+          <JavascriptLogo class="size-6 md:size-6 mr-2 mb-2" /> <span class="text-white">Javascript</span>
         </p>
         <p class="flex flex-col items-center">
-          <ReactLogo class="size-6 md:size-6 mr-2 mb-2" /> React
+          <ReactLogo class="size-6 md:size-6 mr-2 mb-2" /> <span class="text-white">React</span>
         </p>
         <p class="flex flex-col items-center">
-          <TypescriptLogo class="size-6 md:size-6 mr-2 mb-2" /> Typescript
+          <TypescriptLogo class="size-6 md:size-6 mr-2 mb-2" /> <span class="text-white">Typescript</span>
         </p>
         <p class="flex flex-col items-center">
-          <ReduxLogo class="size-6 md:size-6 mr-2 mb-2" /> Redux
+          <ReduxLogo class="size-6 md:size-6 mr-2 mb-2" /> <span class="text-white">Redux</span>
         </p>
         <p class="flex flex-col items-center">
-          <AngularLogo class="size-6 md:size-6 mr-2 mb-2" /> Angular
+          <AngularLogo class="size-6 md:size-6 mr-2 mb-2" /> <span class="text-white">Angular</span>
         </p>
         <p class="flex flex-col items-center">
-          <GitLogo class="size-6 md:size-6 mr-2 mb-2" /> Gihub
+          <GitLogo class="size-6 md:size-6 mr-2 mb-2" /> <span class="text-white">Github</span>
         </p>
       </div>
     </SectionContainer>
 
     <SectionContainer id="contact">
       <h2
-        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-black/80 dark:text-white/80"
+        class="text-3xl font-semibold mb-6 flex gap-x-3 items-center text-white/80 dark:text-white/80"
       >
         Contact
       </h2>
-      <Footer />
+      <Contact />
     </SectionContainer>
   </main>
 </Layout>

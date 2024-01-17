@@ -4,16 +4,17 @@ interface Props {
   description: string
   link?: string
   date: string
+  projectTitle?: string
 }
 
-const { title, description, link, date } = Astro.props
+const { title, description, link, date, projectTitle } = Astro.props
 ---
 
 <div
-  class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-amber-500 bg-gray-700"
+  class="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border bg-yellow-200"
 >
 </div>
-<time class="mb-1 text-lg font-normal text-pretty text-sky-300">{date}</time
+<time class="mb-1 text-lg font-normal text-pretty text-cyan-500">{date}</time
 >
 <h3 class="text-lg font-semibold text-light-green mt-2 text-pretty">
   {title}
@@ -26,9 +27,9 @@ const { title, description, link, date } = Astro.props
     <a
       href={link}
       target="_blank"
-      class="text-sky-500"
+      class="text-cyan-500"
     >
-      {link}
+      {projectTitle}
     </a>
   )
 }
